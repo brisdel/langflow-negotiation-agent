@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AI Negotiation Agent</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Previous header content remains the same -->
+
+    <main>
+        <section class="card input-section">
+            <h2>Provide Negotiation Context</h2>
+            <textarea id="chatInput" placeholder="Type your request or negotiation goal here..." rows="4"></textarea>
+<div id="charCount" style="text-align: right; color: #666; margin-top: 5px; font-size: 0.8em;">
+    Characters: 0 / Estimated tokens: 0
+</div>
+
+            <label for="supplierBehavior">Negotiation Style:</label>
+            <select id="supplierBehavior">
+                <option selected>Recommended</option>
+                <option>Aggressive</option>
+                <option>Defensive</option>
+                <option>Passive</option>
+                <option>Assertive</option>
+                <option>Conservative</option>
+                <option>Disruptive</option>
+                <option>Collaborative</option>
+                <option>Adaptive</option>
+            </select>
+
+            <button onclick="generateStrategy()">Generate Strategy</button>
+        </section>
+
+        <section class="card output-section" id="output" style="display: none;">
+            <h2>Strategy Output</h2>
+            <div class="output-box">
+                <div id="chatOutput">Your negotiation strategy will appear here.</div>
+            </div>
+            <button id="exportBtn">Export to PDF</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2025 Akuna. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>

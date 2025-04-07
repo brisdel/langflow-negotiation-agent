@@ -1,0 +1,63 @@
+/* Add these new styles to your existing CSS */
+.output-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1.5rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    min-height: 100px;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.output-box h1, .output-box h2, .output-box h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a2e;
+}
+
+.output-box strong {
+    color: #1a1a2e;
+    font-weight: 700;
+}
+
+.output-box hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+}
+
+/* Loading state */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Error state */
+.error {
+    color: #dc3545;
+    padding: 1rem;
+    border: 1px solid #dc3545;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+.error {
+    background-color: #fff3f3;
+    border: 1px solid #ffcdd2;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+#charCount {
+    text-align: right;
+    color: #666;
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
+#chatInput {
+    min-height: 100px;
+    margin-bottom: 5px;
+}
